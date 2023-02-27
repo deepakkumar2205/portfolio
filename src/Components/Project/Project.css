@@ -1,0 +1,14 @@
+.projectFull{
+    width: 100%;
+    
+}
+
+.carousel{
+    height:700px
+}
+
+.imgstyle{
+    width: 600px !important;
+    height: auto;
+    object-fit:fill;
+}
