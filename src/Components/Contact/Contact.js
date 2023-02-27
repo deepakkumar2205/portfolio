@@ -16,9 +16,9 @@ const Contact = () => {
       <h1 className='mt-2'>Contact Details</h1>
       <br/>
       <Paper elevation={10} className="p-5 m-3">
-        <div  className='d-flex justify-content-around align-items-around flex-wrap'>
+        <div  className='d-flex justify-content-around align-items-center flex-wrap'>
           
-          <div className='m-3' style={{width:"600px",minHeight:"600px"}}>
+          <div className='compLeft' >
           <h4 className='text-start'>If you want to know more about me or my work, or if you would just like to say hello,
               send me a message, I would love to hear from you</h4>
               <br/> 
@@ -61,11 +61,11 @@ const Contact = () => {
                 </FormControl>
             </Paper>
           </div >
-          <div className='m-3'  style={{width:"600px",minHeight:"600px" }}>
+          <div className='compRight' >
             <Paper elevation={16}>
                 <img src="https://cdn.dribbble.com/users/3960415/screenshots/8995365/work.gif" alt="" className='w-100' />
                 <h3>Find me On</h3>
-                <h6>Please Don't hesitate to Reach out to me and Connect .</h6>
+                <h6 className='m-2'>Please Don't hesitate to Reach out to me and Connect .</h6>
                 <hr/>
                <div className='text-start p-3'>
                <div>

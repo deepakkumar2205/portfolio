@@ -2,3 +2,38 @@
     width: 100%;
     min-height: 90vh;
 }
+
+
+.compLeft{
+   width: 600px;
+   margin: 20px;
+}
+
+
+.compRight{
+    width: 600px;
+
+}
+
+@media screen and (max-width: 1400px) {
+    .compLeft{
+        width: 400px;
+     }
+     
+     
+     .compRight{
+         width: 400px;
+     
+     }
+  }
+@media screen and (max-width: 985px) {
+    .compLeft{
+        width: 600px;
+     }
+     
+     
+     .compRight{
+         width: 600px;
+     
+     }
+  }

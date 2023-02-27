@@ -13,7 +13,7 @@ import { IconButton, Stack } from '@mui/material'
 const Home = () => {
   const contextData = useContext(Context);
   return (
-    <div className='entire' id='home' style={{backgroundImage :`url(${contextData.theme ==='light' ? lightPic : darkPic})`}}>
+    <div className='entire' id='home' style={{height:"100vh",backgroundImage :`url(${contextData.theme ==='light' ? lightPic : darkPic})`}}>
       <div className='centerCont'>
         <div height='100vh'>
         <h1 className="mb-3 display-3 title primary"><b>Hi, I am Deepakkumar</b></h1><hr/>
@@ -44,7 +44,7 @@ const Home = () => {
 
       </div>
         
-        <div  className="d-flex flex-column justify-content-end ">
+        <div  className="d-flex flex-column justify-content-end " style={{height:"16vh"}}>
           <Wave fill='black'
             paused={false}
             options={{
