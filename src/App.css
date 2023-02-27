@@ -12,6 +12,10 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+body {
+  /* overflow-y: hidden; Hide vertical scrollbar */
+  overflow-x: hidden; 
+}
 
 .App-header {
   background-color: #282c34;

@@ -33,7 +33,7 @@ export default function SpeedDialer() {
     {/* // <Box sx={{ height: 915, transform: 'translateZ(0px)', flexGrow: 1 }}> */}
       <SpeedDial
         ariaLabel="SpeedDial basic example"
-        sx={{ position: 'fixed', bottom: 16, right: 16 }}
+        sx={{ position: 'fixed', bottom: 20, right: 20 }}
         icon={<SpeedDialIcon />}
         onClose={handleClose}
         onOpen={handleOpen}
