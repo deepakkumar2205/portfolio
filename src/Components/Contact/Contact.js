@@ -19,13 +19,13 @@ const Contact = () => {
         <div  className='d-flex justify-content-around align-items-center flex-wrap'>
           
           <div className='compLeft' >
-          <h4 className='text-start'>If you want to know more about me or my work, or if you would just like to say hello,
+          <h4 className='text-start'>👋 If you want to know more about me or my work, or if you would just like to say hello,
               send me a message, I would love to hear from you</h4>
               <br/> 
             <Paper elevation={16}>
             <h3 className='pt-3 bg-primary'>Form</h3>
             <hr/>
-                <FormControl fullWidth sx={{ m: 1 }} variant="standard" className='p-3'>
+                <FormControl fullWidth sx={{ m: 0 }} variant="standard" className='p-3'>
                 <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
                 <PersonIcon sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
                    <TextField

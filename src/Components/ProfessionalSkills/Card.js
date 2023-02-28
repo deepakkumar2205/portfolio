@@ -6,10 +6,14 @@ import Typography from '@mui/material/Typography';
 import * as React from 'react';
 import { Progress } from 'react-sweet-progress';
 import "react-sweet-progress/lib/style.css";
+import './Card.css'
 
 export default function CardComp(props) {
+
+ 
+
   return (
-    <Card sx={{ display: 'flex' , width:'350px' }} className="mb-4">
+    <Card sx={{ display: 'flex' , width:'350px' }} className="mb-4 cardStyle" >
       <CardMedia
         component="img"
         sx={{ width: 120 ,height:120}}

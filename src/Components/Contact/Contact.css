@@ -29,8 +29,12 @@
 @media screen and (max-width: 985px) {
     .compLeft{
         width: 600px;
+        margin: 0px;
+        margin-bottom: 20px;
      }
-     
+     .text-start{
+        font-size: 16px;
+     }
      
      .compRight{
          width: 600px;

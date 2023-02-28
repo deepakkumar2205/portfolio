@@ -1,0 +1,7 @@
+.cardStyle:hover{
+   /* border: 1px solid black; */
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   background-color: black;
+   color: white;
+  transition: background-color 3s;
+}
