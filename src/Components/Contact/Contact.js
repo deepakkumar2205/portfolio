@@ -9,13 +9,53 @@ import SendIcon from '@mui/icons-material/Send';
 import PhoneIcon from '@mui/icons-material/Phone';
 import HomeIcon from '@mui/icons-material/Home';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
 
 const Contact = () => {
+
+  const handleSubmit =(e)=>{
+    e.preventDefault()
+    const data = {
+      from_name : e.target.name.value ,
+      email_id: e.target.email.value ,
+      message: e.target.message.value
+    }
+    
+    emailjs.send("service_ysvf7ud", 'template_icfrxfq', data, '8JMAfkH-ZWOSjIXpp')
+      .then((result) => {
+          if(result.text === 'OK'){
+            toast.success('👍 Your Msg Sent Successfully to Deepakkumar ', {
+              position: "top-center",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "colored",
+              });
+          }
+      }, (error) => {
+        toast.error('😖 Some Error Occured', {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          });
+      });
+  };
+  
+
   return (
     <div id='contact' className='contactFull'>
       <h1 className='mt-2'>Contact Details</h1>
       <br/>
-      <Paper elevation={10} className="p-5 m-3">
+      <Paper elevation={10} className="p-4 m-3">
         <div  className='d-flex justify-content-around align-items-center flex-wrap'>
           
           <div className='compLeft' >
@@ -23,42 +63,26 @@ const Contact = () => {
               send me a message, I would love to hear from you</h4>
               <br/> 
             <Paper elevation={16}>
-            <h3 className='pt-3 bg-primary'>Form</h3>
-            <hr/>
-                <FormControl fullWidth sx={{ m: 0 }} variant="standard" className='p-3'>
-                <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
-                <PersonIcon sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
-                   <TextField
-                   fullWidth
-                     label="Name"
-                     variant="standard"
-                   />
-                </Box>
-                   <br/>
-                   <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
-                <EmailIcon sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
-                   <TextField
-                   fullWidth
-                     label="E-mail"
-                     variant="standard"
-                   />
-                </Box>
-                <br/>
-                <Box  sx={{ display: 'flex', alignItems: 'flex-end' }}>
-                <MessageIcon sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
-                <label>Message</label>
-                </Box>
-                <TextareaAutosize
-                  aria-label="minimum height"
-                  fullWidth
-                  label="sldfj"
-                  className='ms-4 mt-2'
-                  minRows={3}
-                  placeholder="Minimum 3 rows"
-                />
-                <br/>
-                <Button  variant='contained'><SendIcon /> Send</Button>
-                </FormControl>
+            <h3 className='p-2 bg-primary headForm'>Form</h3>
+            {/* //! start form */}
+            <form className=" needs-validation" novalidate onSubmit={handleSubmit}>
+            <div className='p-3 text-start '>
+            <div className="mb-3  ">
+               <label htmlFor="nameid" className="form-label " >Name</label>
+               <input type="text" className="form-control" id="nameid" name='name' placeholder="Enter Your Name" aria-describedby="inputGroupPrepend" required/>
+             </div>
+              <div className="mb-3  ">
+               <label htmlFor="emailid" className="form-label ">Email address</label>
+               <input type="email" className="form-control" name='emailid' id="email" placeholder="name@example.com" required/>
+             </div>
+             <div className="mb-3">
+               <label htmlFor="messageid" className="form-label">Message</label>
+               <textarea className="form-control" name='message' id="messageid" rows="3" required></textarea>
+             </div>
+             <Button variant="contained" type='submit' fullWidth endIcon={<SendIcon />}> Send</Button>
+             </div> 
+             </form>
+            {/* //! end form */}
             </Paper>
           </div >
           <div className='compRight' >

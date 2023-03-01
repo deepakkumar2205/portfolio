@@ -5,3 +5,13 @@
    color: white;
   transition: background-color 3s;
 }
+.cardAlign{
+  justify-content: space-between !important;
+}
+
+/* @media screen and (max-width: 886px) { */
+@media screen and (max-width: 1280px) {
+ .cardAlign{
+  justify-content: space-around !important;
+ }
+}

@@ -126,13 +126,12 @@ const ProfessionalSkills = () => {
   return (
     <div className='Profentire ' id='skills'>
       <h1>Skills & Tools</h1>
-      <div style={{width:"100vw",justifyContent:"center",alignItems:'center', display:"flex"}}>
+      <div style={{width:"100vw",justifyContent:"center",alignItems:'center', display:"flex"}} >
         <div style={{width:"90%"}}>
         <Paper elevation={3} >
            <h4 className='text-align-left d-flex p-3'>Professional Skillset :</h4>
-           <div className='d-flex flex-wrap justify-content-between px-5 '>
+           <div className='d-flex flex-wrap  px-5 cardAlign'>
             {skills.map((e=>{
-              console.log(e);
              return <CardComp details={e} key={e.name}/>
             }))}
            </div>
@@ -140,9 +139,8 @@ const ProfessionalSkills = () => {
         <br/ >
         <Paper elevation={3} >
            <h4 className='text-align-left d-flex p-3'>Tools I used :</h4>
-           <div className='d-flex flex-wrap justify-content-between px-5 '>
+           <div className='d-flex flex-wrap  px-5 cardAlign'>
             {tools.map((e=>{
-              console.log(e);
              return <CardComp details={e} key={e.name}/>
             }))}
            </div>
