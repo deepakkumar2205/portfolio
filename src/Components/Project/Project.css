@@ -1,14 +1,15 @@
 .projectFull{
     width: 100%;
-    
+    min-height: auto;
+    height: fit-content;
 }
 
 .carousel{
-    height:700px
+    min-height:700px
 }
 
 .imgstyle{
-    width: 600px !important;
+    width: -webkit-fill-available !important;
     height: auto;
     object-fit:fill;
 }

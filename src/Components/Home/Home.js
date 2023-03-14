@@ -8,7 +8,7 @@ import deepak from './deepak.png'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import { IconButton, Stack } from '@mui/material'
+import { IconButton, Paper, Stack } from '@mui/material'
 
 const Home = () => {
   const contextData = useContext(Context);
@@ -38,9 +38,9 @@ const Home = () => {
         </Stack>
         </div>
         </div>
-        <div className='d-flex flex-column justify-content-end'>
+        <Paper className='d-flex flex-column justify-content-end m-4' elevation={16} style={{borderRadius:"65px" , border:"3px solid black",backgroundColor:"transparent"}}>
           <img src={deepak}  className="image"/>
-        </div>
+        </Paper>
 
       </div>
         
