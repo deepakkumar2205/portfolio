@@ -10,7 +10,7 @@ import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
 import resume from './deepakResumePdf.pdf'
 
 export default function AboutCardResume() {
-  const resumeLink = "https://www.canva.com/design/DAFbaZ4X9wg/3lAFzhDNgw9BASRz2NngiA/view?utm_content=DAFbaZ4X9wg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton";
+  const resumeLink = "https://drive.google.com/file/d/1tJ5GJLgRpEKk-Rtmo3PuWgeKUsuEXoUC/view?usp=sharing";
 
   return (
     <Card sx={{ width: 545,height:545, marginTop:"30px" }} elevation={6}>
