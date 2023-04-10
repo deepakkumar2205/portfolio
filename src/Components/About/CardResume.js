@@ -4,13 +4,13 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, Stack } from '@mui/material';
-import deepakResume from './deepakResume.jpg'
+import deepakResume from './deepakResume.png'
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
 import resume from './deepakResumePdf.pdf'
 
 export default function AboutCardResume() {
-  const resumeLink = "https://drive.google.com/file/d/1tJ5GJLgRpEKk-Rtmo3PuWgeKUsuEXoUC/view?usp=sharing";
+  const resumeLink = "https://drive.google.com/file/d/1E7N752ramUQeU1xJGo_w_ZyI9ki9r1iV/view?usp=sharing";
 
   return (
     <Card sx={{ width: 545,height:545, marginTop:"30px" }} elevation={6}>

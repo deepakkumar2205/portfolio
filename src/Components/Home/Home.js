@@ -26,7 +26,7 @@ const Home = () => {
             </a>
           </IconButton>
           <IconButton color="primary"  component="label" >
-          <a href='https://www.linkedin.com/in/deepakkumar-n-87632b139/' target="_blan">
+          <a href='https://www.linkedin.com/in/deepakkumar-n' target="_blank">
             <LinkedInIcon />
             </a>
           </IconButton>
