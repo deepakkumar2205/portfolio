@@ -65,7 +65,7 @@ const Contact = () => {
             <Paper elevation={16}>
             <h3 className='p-2 bg-primary headForm'>Form</h3>
             {/* //! start form */}
-            <form className=" needs-validation" novalidate onSubmit={handleSubmit}>
+            <form className=" needs-validation" noValidate onSubmit={handleSubmit}>
             <div className='p-3 text-start '>
             <div className="mb-3  ">
                <label htmlFor="nameid" className="form-label " >Name</label>
