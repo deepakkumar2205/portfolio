@@ -28,7 +28,7 @@ const Freelance = () => {
                       <p>I have perfect authentication and authorization flow.</p>
                       <p>If you want to see source of both frontend and backend click the buttons below.</p>
                       <p className="highlight-description">
-                      <Stack direction="row" spacing={2}>
+                      <Stack direction="row-reverse" spacing={2}>
                           <Button size="small" variant='outlined' href="https://github.com/deepakkumar2205/Freelancer-clone" target="_blank" startIcon={<GitHubIcon />}>Github</Button>
                           <Button size="small" variant='outlined' href="https://freelancers-deepak.netlify.app" target="_blank" startIcon={<LaunchIcon/>} >Site</Button>
                       </Stack>

@@ -30,7 +30,7 @@ const Crm = () => {
                       <p>I created this application based on single firm</p>
                       <p>If you want to see source of both frontend and backend click the buttons below .</p>
                       <p className="highlight-description">
-                      <Stack direction="row" spacing={2}>
+                      <Stack direction="row-reverse" spacing={2}>
                           <Button size="small" variant='outlined' href="https://github.com/deepakkumar2205/CRM-App-Webcode-2" target="_blank" startIcon={<GitHubIcon />}>Github</Button>
                           <Button size="small" variant='outlined' href="https://deepak-crm-app-webcode-2.netlify.app" target="_blank" startIcon={<LaunchIcon/>} >Site</Button>
                       </Stack>

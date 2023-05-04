@@ -31,7 +31,7 @@ const Url = () => {
                       <h4 className="highlight-title">Device Info Thefter</h4>
                       <p className="highlight-description">Using this url Shortner Application we can get the device details of the person who click this links.</p>
                       <p className="highlight-description">
-                      <Stack direction="row" spacing={2}>
+                      <Stack direction="row-reverse" spacing={2}>
                           <Button size="small" variant='outlined' href="https://github.com/deepakkumar2205/Day-44-Url_Shortner_App" target="_blank" startIcon={<GitHubIcon />}>Github</Button>
                           <Button size="small"  variant='outlined' href="https://s-u.netlify.app/" startIcon={<LaunchIcon/>} target="_blank">Site</Button>
                       </Stack>

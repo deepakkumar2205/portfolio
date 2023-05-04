@@ -37,7 +37,7 @@ const Bulkemail = () => {
                       <p className="highlight-description">Bulk Email tool Application is used to send more email at a time and this application have perfect authentication. </p>
                       <p className="highlight-description">If you want to see source of both frontend and backend click the buttons below .</p>
                       <p className="highlight-description">
-                      <Stack direction="row" spacing={2}>
+                      <Stack direction="row-reverse" spacing={2}>
                           <Button size="small" variant='outlined' href="https://github.com/deepakkumar2205/Bulk-Email-tool" target="_blank" startIcon={<GitHubIcon />}>Github</Button>
                           <Button size="small"  variant='outlined' href="https://bulk-emailtool.netlify.app" target="_blank" startIcon={<LaunchIcon/>} >Site</Button>
                       </Stack>
